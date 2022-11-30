@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Студія</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+<!--Header-->
+<header class="header">
+  <div class="conteiner header__conteiner">
+    <a class="header__logo" href="./index.html">Web<span class="header__web">Studio</span></a>
+    <button type="button" class="menu-open" data-menu-open>
+      <svg class="menu-open-icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-menu_open">
+        </use>
+      </svg>
+    </button>
+    <!--Mob Menu-->
+    <div class="mob-menu is-hidden" data-menu>
+      <button type="button" class="menu-close" data-menu-close>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close">
+          </use>
+        </svg>
+      </button>
+      <div class="conteiner-menu">
+        <div class="mobile-top-list">
+          <ul class="mobile-list list">
+            <li class="mobile-list__item">
+              <a href="./index.html" class="mobile-list__link">Студія</a>
+            </li>
+            <li class="mobile-list__item">
+              <a href="./portfolio.html" class="mobile-list__link">Портфоліо</a>
+            </li>
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-bottom-list">
+          <ul class="mobile-contact list">
+            <li class="mobile-contact__item">
+              <a href="tel:+380961111111" class="mobile-contact__link tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contact__link mail">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="soclink list">
+            <li class="soclink__item">
+              <a class="soclink__link link" href="" target="blank" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="soclink__item">
+              <a class="soclink__link link" href="" target="blank" rel="noopener noreferrer nofollow">Twitter</a>
+            </li>
+            <li class="soclink__item">
+              <a class="soclink__link link" href="" target="blank" rel="noopener noreferrer nofollow">Facebook</a>
+            </li>
+            <li class="soclink__item">
+              <a class="soclink__link link" href="" target="blank" rel="noopener noreferrer nofollow">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul class="navigation__menu list">
+        <li class="navigation__item">
+          <a href="./index.html" class="navigation__link">Студія</a>
+        </li>
+        <li class="navigation__item">
+          <a href="./portfolio.html" class="navigation__link current">Портфоліо</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="contacts list">
+      <li class="contacts__item">
+        <a href="mailto:info@devstudio.com" class="contacts__link mail">
+          <svg class="contacts__icon" width="16px" height="12px">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+      </li>
+      <li class="contacts__item">
+        <a href="tel:+380961111111" class="contacts__link tel">
+          <svg class="contacts__icon" width="10px" height="16px">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg> +38 096 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
+  <main>
+    <!--Filters Box-->
+    <section class="section">
+      <div class="conteiner">
+        <h1 class="title-hidden">Портфоліо</h1>
+        <ul class="filter list">
+          <!--Filter All-->
+          <li class="item">
+            <button type="button" class="button secondary">
+              <a>Усі</a>
+            </button>
+          </li>
+          <!--Filter Web Site-->
+          <li class="item">
+            <button type="button" class="button secondary">
+              <a>Веб-сайти</a>
+            </button>
+          </li>
+          <!--Filter Apps-->
+          <li class="item">
+            <button type="button" class="button secondary">
+              <a>Додатки</a>
+            </button>
+          </li>
+          <!--Filter Design-->
+          <li class="item">
+            <button type="button" class="button secondary">
+              <a>Дизайн</a>
+            </button>
+          </li>
+          <!--Filter Marketing-->
+          <li class="item">
+            <button type="button" class="button secondary">
+              <a>Маркетинг</a>
+            </button>
+          </li>
+        </ul>
+        <!--Projects Box-->
+        <ul class="project list">
+          <!--Project 1-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project1.jpg" alt="Відкритий ноутбук" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Технокряк</h3>
+                <p class="text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 2-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project2.jpg" alt="Два баскетболіста стрибають" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                <p class="text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 3-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project3.jpg" alt="Логотип рибного ресторану" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Ресторан Seafood</h3>
+                <p class="text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 4-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project4.jpg" alt="Навушники закритого типу" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Проєкт Prime</h3>
+                <p class="text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 5-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project5.jpg" alt="Дві картонні коробки" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Проєкт Boxes</h3>
+                <p class="text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 6-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project6.jpg" alt="Сайт зображений на моноблоці Apple iMac" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Inspiration has no Borders</h3>
+                <p class="text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 7-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project7.jpg" alt="Розгорнутий журнал" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це
+                  дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Видання Limited Edition</h3>
+                <p class="text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 8-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project8.jpg" alt="Паперовий ярлик з написом" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це
+                  дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Проєкт</h3>
+                <p class="text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <!--Project 9-->
+          <li class="item">
+            <a href="#" class="project-link link">
+              <div class="project-top">
+                <img src="./images/project9.jpg" alt="Людина працює на ноутбуці" />
+                <p class="top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                  це
+                  дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.</p>
+              </div>
+              <div class="content">
+                <h3 class="title">Growing Business</h3>
+                <p class="text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+<!--Footer-->
+<footer class="section-basement">
+  <div class="footer-box conteiner">
+    <div class="section-box">
+      <div class="logo-secondary">
+        <a class="logo-secondary__link" href="./index.html">Web<span class="logo-secondary__web">Studio</span></a>
+      </div>
+      <div class="address-box">
+        <address>
+          <ul class="address list">
+            <li class="address__map">
+              <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                class="address__map-link link">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="address__mail">
+              <a href="mailto:info@devstudio.com" class="address__mail-link link">info@devstudio.com</a>
+            </li>
+            <li class="address__tel">
+              <a href="tel:+380961111111" class="address__tel-link link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="social">
+      <h2 class="social__title">Приєднуйтесь</h2>
+      <ul class="social__list list">
+        <li class="social__item">
+          <a href="" class="social__link link">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sign">
+      <p class="sign__text">Підпишіться на розсилку</p>
+      <form action="#" class="sign__form">
+        <input type="email" name="email" placeholder="E-mail" class="sign__input">
+        <button type="submit" class="sign__button">Підписатися
+          <svg class="sign__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
