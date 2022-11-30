@@ -1,7 +1,7 @@
 .section.hero {
     text-align: center;
     background-color: var(--hero-bcgnd-color);
-    background-image: linear-gradient( var(--gradient-hero)), url(/images/hero-mobile.jpg);
+    background-image: var(--gradient-hero), url(/images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,20 +10,20 @@
     padding-top: 118px;
     padding-bottom: 118px;
     @include mobile {
-        background-image: linear-gradient( var(--gradient-hero)), url(/images/hero-mobile2x.jpg);
+        background-image: var(--gradient-hero), url(/images/hero-mobile2x.jpg);
         }
     @include tablet {
-        background-image: linear-gradient( var(--gradient-hero)), url(/images/hero-tablet.jpg);
+        background-image: var(--gradient-hero), url(/images/hero-tablet.jpg);
         }
         @include retina {
-        background-image: linear-gradient( var(--gradient-hero)), url(/images/hero-tablet2x.jpg);
+        background-image: var(--gradient-hero), url(/images/hero-tablet2x.jpg);
         }
     @include desktop {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient( var(--gradient-hero)), url(/images/hero.jpg);
+        background-image: var(--gradient-hero), url(/images/hero.jpg);
         @include retina {
-        background-image: linear-gradient( var(--gradient-hero)), url(/images/hero2x.jpg);
+        background-image: var(--gradient-hero), url(/images/hero2x.jpg);
         }
         }
 }
