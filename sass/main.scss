@@ -1,0 +1,23 @@
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/mixin';
+
+@import './base/reset';
+@import './base/comman.scss';
+@import './base/hidden';
+
+@import './components/button';
+@import './components/header';
+@import './components/modal';
+@import './components/section.scss';
+
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/filter';
+@import './layouts/project';
+@import './layouts/footer';
+
+
