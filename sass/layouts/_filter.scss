@@ -1,12 +1,18 @@
 .filter {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 0;
     padding-bottom: 40px;
-
-    & .item:not(:last-child) {
-        margin-right: 8px;
+    @include tablet {
+    justify-content: center;
     }
 }
+
+.filter-item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
 
 
