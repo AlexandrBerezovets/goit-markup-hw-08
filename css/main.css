@@ -385,7 +385,7 @@ body {
 
 .soclink {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .soclink__link {
@@ -398,19 +398,18 @@ body {
 }
 @media screen and (min-width: 480px) {
   .soclink__link {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .soclink__item:not(:last-child) {
   height: 22px;
-  padding-right: 5px;
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (min-width: 480px) {
-  .soclink__item:not(:last-child) {
-    padding-right: 10px;
-  }
+
+.soclink__item:not(:first-child) {
+  padding-left: 10px;
 }
 
 .backdrop {
