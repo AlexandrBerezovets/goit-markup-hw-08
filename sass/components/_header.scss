@@ -65,7 +65,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    transform: translateY(32px);
+    transform: translateY(33px);
     position: relative;
         }
 }
@@ -238,9 +238,6 @@
 .soclink {
     display: flex;
     justify-content: space-between;
-    @include mobile {
-        max-width: 357px;
-    }
 }
 
 .soclink__link {
